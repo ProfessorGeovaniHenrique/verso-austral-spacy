@@ -1,7 +1,1 @@
-# Python 3.11 compatible versions with pre-built wheels
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-spacy==3.7.4
 
-# Download model after install
-# python -m spacy download pt_core_news_lg
