@@ -14,12 +14,12 @@ RUN apt-get update && apt-get install -y \
 # Copia requirements.txt
 COPY requirements.txt .
 
-# Instala dependências Python
+# Instala dependências Python COM versões fixas
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Baixa modelo spaCy pt_core_news_lg
-RUN python -m spacy download pt_core_news_lg
+# Baixa modelo spaCy pt_core_news_lg COM versão específica
+RUN python -m spacy download pt_core_news_lg-3.7.0
 
 # Copia código da aplicação
 COPY app.py .
