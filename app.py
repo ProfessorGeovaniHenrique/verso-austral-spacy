@@ -4,7 +4,7 @@ import spacy
 from typing import List, Dict
 
 # Carregar modelo pt_core_news_lg na inicialização
-nlp = spacy.load("pt_core_news_lg")
+nlp = spacy.load("pt_core_news_sm")
 
 app = FastAPI(title="Verso Austral - spaCy POS API")
 
