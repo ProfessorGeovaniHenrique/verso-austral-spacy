@@ -1,4 +1,7 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-spacy==3.7.2
-pt-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_lg-3.7.0/pt_core_news_lg-3.7.0-py3-none-any.whl
+# Python 3.11 compatible versions with pre-built wheels
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+spacy==3.7.4
+
+# Download model after install
+# python -m spacy download pt_core_news_lg
