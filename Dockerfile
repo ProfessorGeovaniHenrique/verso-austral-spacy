@@ -19,7 +19,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 # Baixa modelo spaCy pt_core_news_lg COM versão específica
-RUN python -m spacy download pt_core_news_lg-3.7.0
+RUN pip install https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.7.0/pt_core_news_sm-3.7.0-py3-none-any.whl
 
 # Copia código da aplicação
 COPY app.py .
